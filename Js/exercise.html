@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise</title>
+</head>
+<body>
+
+    <h1 id="demo"></h1>
+
+    <script>
+
+        let name = prompt("Enter your name");
+        document.getElementById("demo").innerText ="Welcome to you all";
+
+        let num1 = prompt("Enter num1");
+        let num2 = prompt("Enter num2");
+        let operation = num1 -num2;
+        let operation2 = num1 +num2;
+        let operation3 = num1 /num2;
+        let operation4 = num1 *num2;
+        if (num1 - num2) {
+         alert("Result" +operation);
+        }
+        if (num1 + num2) {
+         alert("Result" +operation2);
+        }
+        if (num1 / num2) {
+         alert("Result" +operation3);
+        }
+        if (num1 * num2) {
+         alert("Result" +operation4);
+        }else{
+            alert("Invalid operator")
+        }
+
+    </script>
+    
+</body>
+</html>

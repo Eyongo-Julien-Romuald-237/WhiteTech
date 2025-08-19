@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js calculator</title>
+
+</head>
+<body>
+    <script>
+ 
+        //  Assignment 5 
+        let operator = prompt ("Enter operator(+,-,*,/):");
+        let num1 = parseFloat ( prompt("Enter number one :"));
+        let num2 = parseFloat(prompt ("Enter second number"));
+
+        switch(operation) {
+            case'+':
+            result =num1 + num2;
+            break;
+            case'*':
+            result =num1 * num2;
+            break;
+            case '-':
+            result =num1 - num2;
+            break;
+            case '/':
+            result = num1 / num2;
+            result =num2 !==0 ? num1/num2: "Cannot be divide by 0" ;
+            break;
+            default:
+            result = "Invalid operator";
+            
+        }
+         alert ("Result :" +result );
+
+    </script>
+    
+</body>
+</html>

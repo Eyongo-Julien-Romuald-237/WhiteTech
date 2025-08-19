@@ -1,0 +1,186 @@
+*¨{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    background-color: black;
+     padding: 30px;
+    margin: 0;
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.hero{
+    background-image: url(image/background_whitetech.webp);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.link a{
+   text-decoration: none;
+   color: aliceblue;
+   margin-right: 5px;
+   transition: 0.8s;
+}
+.about{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.main{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding: 30px;
+}
+.main div{
+    transition: 0.9s;
+  }
+div+h2{
+    display: flex;
+    justify-content: center;
+}
+img{
+    border-radius: 50%;
+    border: 1px solid blue;
+    object-fit: fill;
+    width: 100PX ;
+    height:100PX;
+    margin-bottom: 10px;
+}
+.first,.second,.third{
+    background-color: aliceblue;
+    width: 30%;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.parent_project{
+    background-color:rgba(250, 235, 215, 0.169);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.project div{
+    background-color: aliceblue;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.9s;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    flex-grow: 6;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.parent{
+    background-color:rgba(250, 235, 215, 0.544);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.form{
+    max-width: 600px;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow:  0px 3px 5px blue;
+    font-size: 30px;
+}
+input[type="text"],input[type="submit"],input[type="email"],textarea,fieldset{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 30px;
+    color: blue;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    background-color: pink;
+    transition: 1.0s;
+}
+footer{
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+footer div nav{
+    display: block;
+    margin: 10px;
+}
+footer div{
+    margin: 10px;
+}
+.project div:hover{
+    background: darkred;
+    color: aliceblue;
+}
+.main div:hover{
+    background: darkred;
+    color: aliceblue;
+}
+a:hover{
+    background: darkred;
+    padding: 5px;
+    border-radius: 5px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    transform:  0.3s;
+}
+footer div nav a{
+    margin: 5px;
+}
+main+footer{
+    margin: 30px 0px 0px 0px ;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+   background-color: brown;
+   color: aliceblue;
+}
+legend,input[type="submit"] {
+    cursor: pointer;
+}
+
+
+

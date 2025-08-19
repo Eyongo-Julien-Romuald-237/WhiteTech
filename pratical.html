@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratical_work</title>
+    <!-- CSS Style -->
+     <style>
+        body{
+            background-color: cadetblue;
+            margin: 0;
+            padding: 20px;
+        }
+        .form{
+            background-color: whitesmoke;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 5px;
+            margin: 10px;
+            color: blue;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+        label,input{
+            display:block ;
+        }
+        input,select{
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px 0PX;
+        }
+        label{
+            margin-left: 10px;
+        }
+        
+        input[type="submit"]{
+            color: blue;
+            background-color: pink;
+           transition: 2s;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            position: sticky;
+        }
+        input[type="submit"]:hover{
+            background: darkred;
+            color: aliceblue;
+        }
+        .background{
+            background-image: url(image/etudiants_africains-_stocklib_c_hongqi_zhang.jpg);
+            top: 0;
+            left: 0;
+            position: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(3px);
+        }
+        td,p{
+            color: whitesmoke;
+        }
+       
+        
+
+
+     </style>
+
+<body>   
+    <!-- Background image -->
+    <div class="background"> </div>       
+   <!-- AN  Exercise -->
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+
+    <!-- An exercise -->
+      <table border="1">
+       <!-- The head -->
+        <tr style="background-color: greenyellow;">
+            <th rowspan="3">AFRILAND FIRST BANK</th>
+            <th>Numero de Compte</th>
+            <th style="padding: 15px;">Clé</th>
+        </tr>
+        <!-- The body  -->
+        <tr>
+            <td>2099123456</td>
+            <td>14</td>
+        </tr>
+        <!-- The footer -->
+         <tr>
+            <td colspan="2">Numero de telephone  Numero de telephone Numero de telephone</td>
+         </tr>
+        
+      </table>
+      <!-- A form -->
+      
+        <div  class="form">
+            <h1>Registration Form</h1>
+            <marquee behavior="" direction="">Register here</marquee>
+                <form action="" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Fullname" required>
+                    <label for="dob">Date of birth:</label>
+                    <input type="date" id="dob">
+                    <label for="file">Your CV:</label>
+                    <input type="File" id="file">
+                    <label for="Level">Your Level:</label>
+                    <select name="Class" id="Level">
+                        <option value="">Form 1</option>
+                        <option value="">Form 2</option>
+                        <option value="">Form 3</option>
+                        <option value="">Form 4</option>
+                        <option value="">Form 5</option>
+                        <option value="">Lowersixth</option>
+                        <option value="">Uppersixth</option>
+                    </select>
+                    <input type="submit">
+                   
+
+                </form>
+            </div>
+
+   
+
+
+</body>
+</html>

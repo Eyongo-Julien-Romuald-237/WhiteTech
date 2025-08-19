@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="Author" content="EYONGO_ROMULAD_JULIEN">
+    <meta name="Description" content="making_use_of_Div_element">
+    <meta name="reply-to" content="eyongobitolo@gmail.com">
+    <meta name="Appliction_name" content="whitetech">
+    <meta http-equiv="refresh" content="30">
+    <title>Assignment_2</title>
+    <!--CSS-->
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header , footer{
+            background-color: #225;
+            padding: 20px;
+            text-align: center;
+            color: aliceblue;
+            border-radius: 5px;
+        }
+        main .main{
+            display: flex;
+            flex: 3;
+            
+        }
+        .first{
+            background-color: bisque;
+            padding: 10px;
+            width: 30%;
+            margin: 5px;
+             border-radius: 10px;
+        }
+        .second{
+            background-color: whitesmoke;
+            padding: 10px;
+            width: 30%;
+            margin: 5px;
+             border-radius: 10px;
+        }
+        .third{
+            background-color: antiquewhite;
+            padding: 10px;
+            width: 40%;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        h2{
+            background-color: #225;
+            border-radius: 5px;
+            text-align: center;
+            color: aliceblue;
+        }
+        span{
+            font-size: 16px;
+            background-color: yellow;
+            padding: 3px;
+            display: none;
+            display: block;
+            border-radius: 5px;
+            text-align: center;
+            color: black;
+        }
+        form, input[type="text"] ,input[type="date"], textarea,label{
+            display: inline-flex;
+            display: block;
+            width: 70%;
+            margin: 5px;
+            background-color: whitesmoke;
+            padding: 10px;
+            width: 80%;
+            align-items: center;
+            justify-items: center;
+            border-radius: 10PX;
+        }
+        img{
+            width: 100%;
+            height: 350px;
+        }
+        a:hover{
+            background: darkred;
+            padding: 5px;
+        }
+        nav a{
+           text-decoration: none ;
+           margin: 10px;
+          color: rgb(0, 251, 255);  
+        }
+        nav{
+            text-align: center;
+            margin: 10px; 
+        }
+        figcaption{
+            padding: 5px;
+        }
+        select{
+            display: none;
+            display: block;
+            margin-right: 300px;
+            border-radius: 5px;
+        }
+        label{
+            margin-right: 25px;
+        }
+        .background{
+            background-image: url(image/etudiants_africains-_stocklib_c_hongqi_zhang.jpg);
+            background-size: cover;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(5PX);
+        }
+        article{
+            color: aliceblue;
+            margin: 5px;
+        }
+        #span{
+            display: none;
+            display: block;
+            background-color: whitesmoke;
+        }
+        a[href="#foot"] {
+            margin: 500px;
+            color: rgb(0, 251, 255);
+            text-decoration: none;
+            
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <!--The Header-->
+    <header>
+        <h1>Bright Future Academy</h1>
+             <img src="image/classe-et-tableau-cc2ghf.jpg" alt="Picture">
+        <figcaption><mark> &quot;Ours class Rooms favourable and good for students comfort &quot; </mark></figcaption>
+    </header>
+    <!--The main content-->
+    <a href="#foot"> Move To Down Page</a>
+    <main>
+        <section>
+                <article>
+                 <h2>Welcome Message</h2>
+                  <p>Welcome to Bright Future Academy,where every student is nurtured to shine academically and morally. <span> We are comitted to creating a supportive and innovative ; </span></p>
+                  <hr/>
+                </article>
+        </section>       
+                <!--The main Div-->
+        <div class="main">
+            
+                <!--The first Div--> 
+            <div class="first">
+                <h2 id="subjects">Subjects offered</h2>
+            <ul>
+                <li>Mathematics</li>
+                <li>English</li>
+                <li>Biology</li>
+                <li>Chemistry</li>
+                <li>ICT</li>
+                <li>History</li>
+            </div>
+            <!--The second Div--> 
+            <div class="second">
+                <h2 id="admisssion">Admission Process</h2>
+                <ol>
+                  <li>Collect and fill out the admisssion form</li>
+                  <li>Submit required documents</li>
+                  <li>Attend orientation</li>
+                  <li>Receive acceptance letter</li>
+                  <li>Pay school fees</li>
+                </ol>
+            </div>
+            <!--The Third Div--> 
+            <div class="third">
+                <h2>School Scheduke</h2>
+                <table border="1">
+                  <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                </tr>
+                <tr>
+                   <td>8:00-9:00</td>
+                   <td>Maths</td>
+                   <td>English</td>
+                   <td>Biology</td>
+                </tr>
+                <tr>
+                   <td>9:00-10:00</td>
+                   <td>ICT</td>
+                   <td>Chemistry</td>
+                   <td>Geography</td>
+                </tr>
+                <tr>
+                  <td>10:00-11:00</td>
+                  <td>Break</td>
+                  <td>Break</td>
+                  <td>Break</td>
+               </tr>
+            </table>
+            </div> 
+
+        </div>
+        <h2>Registration Form</h2>
+        <form action="" method="POST">
+            <label for="Language">Select Your Language:</label>
+            <input type="radio" id="lang" name="Language">EN
+            <span id="span">
+            <input type="radio" id="lang_2" name="Language"> FR
+            </span>
+            <label for="name">FULL NAME:</label>
+            <input type="text" name="full_name" id="name" placeholder="Enter fullname" required>
+            <label for="date">Date of Birth:</label>
+            <input type="date" name="date" id="date" required>
+            <label for="class">Choose Your level:</label>
+            <select name="class" id="class">
+                <option value="Form_1">Form 1</option>
+                <option value="Form_2">Form 2</option>
+                <option value="Form_3">Form 3</option>
+                <option value="Form_4">Form 4</option>
+                <option value="Form_5">Form 5</option>
+                <option value="lowersixth">Lowersixth</option>
+                <option value="Uppersixth" selected>Uppersixth</option>
+            </select>
+            <label for="comment"> COMMENT:</label>
+            <textarea name="comment" id="comment" rows="10px" ></textarea>
+            <input type="submit">
+        </form>
+        <section>
+            <img src="image/1595873842-GettyImages-1171160653.jpg" alt="Picture" style="width: auto; border-radius: 300px; margin:50px 400PX ;" >
+        </section>
+        <!-- Navigation bar-->
+         <nav>
+            <a href="#">About Us</a>
+            <a href="asignment.html">HOME Page</a>
+            <a href="#subjects">Infos</a>
+         </nav>
+    </main>
+    <hr/>
+    <!--Footer-->
+    <footer id="foot">
+        &copy;2025 Whitetech Sis at HITBAMAS
+    </footer>
+
+    
+    
+</body>
+</html>
